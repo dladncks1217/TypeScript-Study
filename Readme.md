@@ -45,7 +45,7 @@
   - 이것을 TypeScript의 단점으로 지적하는 사람들이 제일 많다.
   - 그러나 그 부분도 극복하기 위해 많이 노력중이라고 함.
   - TypeScript에는 Linking 과정이 없음.
-## TypeScript 컴파일러
+## 5. TypeScript 컴파일러
   - 타입스크립트 컴파일러가 npm 모듈로 제공되므로 node.js가 설치되어야 함.
   >VS Code
    ####컴파일러
@@ -53,7 +53,32 @@
    -  내장된 컴파일러 버전은 VS Code가 업데이트 되면서 올라간다.
       -  그래서 컴파일러 버전과 VS Code의 버전은 상관관계가 있음.
    -  내장된 컴파일러를 선택할 수 있고, 직접 설치한 컴파일러 선택 가능.
-   ####tslint
+  ####tslint
    -  npm i typescript tslint(로컬)
    -  tslint --init
-   
+
+## 6. TypeScript의 Basic Types
+  - TypeScript도 기본 자료형이 있다.(JS가 기본 자료형이 있듯이.)
+  - TypeScript에서 기본 자료형이 중요한 이유가 있다.
+     - 결국 우리는 타입을 새로 만들어야 하는 것이다. (Primitive 타입 쓰려고 타입스크립트 쓰는게 아니기 때문이다.)
+     - 어떤 특정한 골격을 갖출 때 결국 이 타입들이 다 깨지면 결국 남는 것은 Basic 타입들이 남는 것이다.
+     - 정확하게 어떤 타입들이 있는지 확인하고, 그런 것들을 조합해서 내가 사용할 인터페이스를 만들어 내는 것이 원래 TypeScript가 타입을 만드는 과정이다.
+     - 그렇기 때문에 JavaScript의 기본 자료형을 모두 포함한다.
+     <br/>
+     >> ES표준에 따른 기본 자료형들
+     - Boolean
+     - Number
+     - String
+     - Null
+     - Undefined
+     - Symbol(ES6에서 추가.)
+     >>프로그래밍을 도울 몇 가지 타입 추가된다.
+     - Any
+     - Void
+     - Never  (Any, Void, Never 이 세 가지는 주로 특수한 케이스에서 많이 사용하는데, 주로 함수 리턴에 많이 사용.)
+     - Enum
+     - Tuple: object형  (Array의 변칙 형태이다.)
+## 7. Primitive Type
+  - 실제로 원시값 이야기 하는 것이다.
+  - 오브젝트와 레퍼런스 형태가 아닌 실제 값을 저장하는 자료형이다.
+  - 프리미티브 형의 내장 함수를 사용 가능한 것은 자바스크립트의 처리 방식 덕분이다.
